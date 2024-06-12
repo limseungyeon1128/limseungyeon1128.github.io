@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card:nth-child(1) {
+            background-color: black;
+        }
+        .card:nth-child(2) {
+            background-color: #ff7f00;
+        }
+        .card:nth-child(3) {
+            background-color: #ffff00;
+        }
+        .card:nth-child(4) {
+            background-color: #00ff00;
+        }
+        .card:nth-child(5) {
+            background-color: #0000ff;
+        }
+        .card:nth-child(6) {
+            background-color:purple;
+        }
+        .card {
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .card p {
+            font-size: 18px;
+            margin: 0;
+            color: #fff;
+            line-height: 1.4;
+        }
+        .icon {
+            font-size: 28px;
+            margin-right: 10px;
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<p>kapon의 홈페이지에 오신 것을 환영합니다!</p>
+    <header>
+        <h1>나의 포트폴리오</h1>
+    </header>
+    <div class="container">
+        <img src="shiba.jpg" alt="Profile Image" class="profile-img">
+        <div class="card">
+            <h2><i class="fas fa-user icon"></i>이름 (한글, 영문)</h2>
+            <p>임승연 (Lim Seungyeon)</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-envelope icon"></i>이메일주소 (학교메일)</h2>
+            <p>kapon@dongyang.ac.kr</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-code icon"></i>기술스택</h2>
+            <p>Python, html/css, vs code, github</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-graduation-cap icon"></i>대학정보</h2>
+            <p>동양미래대학교 컴퓨터소프트웨어공학과 입학년도:2024년</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-laptop-code icon"></i>기술개발 경험</h2>
+            <p>대학교 와서 해본게 처음</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-lightbulb icon"></i>관심 기술분야</h2>
+            <p>웹 개발</p>
+        </div>
+    </div>
 </body>
 </html>
